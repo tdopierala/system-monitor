@@ -1,30 +1,39 @@
 <template>
-	<nav>
-		<router-link to="/">Home</router-link> |
-		<router-link to="/about">About</router-link>
-	</nav>
-	<router-view />
+	<main>
+		<monitor-box></monitor-box>
+	</main>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue';
+import MonitorBox from '@/components/MonitorBox.vue';
+
+export default defineComponent({
+	components: { MonitorBox },
+	name: 'App',
+});
+</script>
+
 <style lang="scss">
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-nav {
-	padding: 30px;
+html,
+body {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(180deg, #647170 0%, #090c15 100%);
+}
 
-	a {
-		font-weight: bold;
-		color: #2c3e50;
+$col-errors: #e23333;
+$col-warnings: #cb9b47;
+$col-operations: #2699fb;
 
-		&.router-link-exact-active {
-			color: #42b983;
-		}
-	}
+#app {
+	font-family: 'Segoe UI', sans-serif;
+	color: #fff;
 }
 </style>

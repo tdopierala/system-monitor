@@ -159,12 +159,13 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .monitor-box {
-	margin: 10px;
+	margin: 10px auto;
 	padding: 10px;
 	background-image: linear-gradient(180deg, rgba(14, 43, 59, 0.32) 0%, rgba(0, 0, 0, 0.24) 100%);
+	max-width: 1080px;
 
 	.data-sup {
-		font-size: 11px;
+		font-size: 0.7rem;
 	}
 
 	.monitor-header {
@@ -172,22 +173,26 @@ export default defineComponent({
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-direction: column;
+		text-align: center;
 
 		.monitor-info {
 			h1 {
 				text-transform: uppercase;
+				font-size: 1.7rem;
 			}
 
 			p {
 				color: #777780;
+				margin: 10px 0;
 			}
 		}
 
 		.chart-data {
-			width: 20vw;
+			width: 100vw;
 			margin: 0 10px;
 			text-align: center;
-			font-size: 25px;
+			font-size: 1.5rem;
 			color: #777780;
 
 			.warning {
@@ -200,23 +205,45 @@ export default defineComponent({
 		}
 	}
 
+	@media (min-width: 600px) {
+		.monitor-header {
+			flex-direction: row;
+			text-align: left;
+
+			.chart-data {
+				width: 20vw;
+			}
+		}
+	}
+
 	.chart-container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-direction: column;
 
 		.chart-box {
 			width: 80vw;
 		}
 
 		.chart-data {
-			width: 20vw;
+			width: 100vw;
 			margin: 0 10px;
 			text-align: center;
-			font-size: 15px;
+			font-size: 1rem;
 
 			h3 {
-				font-size: 33px;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	@media (min-width: 600px) {
+		.chart-container {
+			flex-direction: row;
+
+			.chart-data {
+				width: 20vw;
 			}
 		}
 	}
@@ -237,7 +264,7 @@ export default defineComponent({
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		font-size: 11px;
+		font-size: 0.7rem;
 		color: #8e8ec1;
 
 		div {

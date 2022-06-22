@@ -35,5 +35,8 @@ $col-operations: #2699fb;
 #app {
 	font-family: 'Segoe UI', sans-serif;
 	color: #fff;
+	font-size: 14px;
+	line-height: 1.5rem;
+	padding: 0 10px;
 }
 </style>

@@ -133,7 +133,7 @@ export default defineComponent({
 			this.dataInterval = setInterval(() => {
 				this.getData();
 				this.timer = 0;
-			}, 10000);
+			}, 20000);
 		},
 
 		setTimer() {

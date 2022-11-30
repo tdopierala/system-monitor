@@ -60,12 +60,13 @@ import { MonitorDataElement } from '@/shared/interfaces/monitorDataElement.model
 import ChartBox from '@/components/ChartBox.vue';
 
 export default defineComponent({
-	name: 'system-monitor',
-	url: 'https://system-monitor-demo.netlify.app/',
+	name: 'SystemMonitor',
 	components: { ChartBox },
 
 	data() {
 		return {
+			name: 'System Monitor',
+			url: 'https://system-monitor-demo.netlify.app/',
 			dataInterval: 0,
 			timerInterval: 0,
 

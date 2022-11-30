@@ -6,6 +6,8 @@ Demo application for presenting dynamic data on bar charts
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/57e6f901-91ea-4c58-a1e7-155123583547/deploy-status)](https://app.netlify.com/sites/system-monitor-demo/deploys)
 
+![system-monitor-screenshot](system-monitor.png)
+
 ## Project setup
 ```
 npm install

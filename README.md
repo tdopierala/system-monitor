@@ -1,6 +1,6 @@
 # System Monitor
 
-Demo application for presenting dynamic data on bar charts
+Demo application for displaying data to support remote monitoring of IT systems performance. 
 
 [system-monitor-demo.netlify.app](https://system-monitor-demo.netlify.app/)
 
